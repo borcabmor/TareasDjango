@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Django",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",  // Ruta al archivo manage.py
+            "args": ["runserver_plus"],  // Argumentos para ejecutar el servidor
+            "django": true,
+            "justMyCode": true,
+            "env": {
+                "DJANGO_SETTINGS_MODULE": "proyecto.settings"
+            },
+            "python": "${workspaceFolder}/venv/Scripts/python.exe",  // Ajusta esta ruta si tu entorno virtual está en otro lugar
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
